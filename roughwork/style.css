@@ -1,64 +1,65 @@
-.card-container {
-    padding: 0;
-    margin: 0;
-    background: rgb(27, 27, 27);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+body {
+    margin: 40px;
 }
 
-.card {
-    background: white;
-    width: 270px;
-    margin: 10px;
-    border-radius: 15px;
+.sidebar {
+    grid-area: sidebar;
 }
 
-.card-image {
-    height: 190px;
-    margin-bottom: 15px;
-    background-size: cover;
-    border-radius: 15px 15px 0 0;
+.sidebar2 {
+    grid-area: sidebar2;
 }
 
-.car-1 {
-    background-image: url("C:/Users/quing/Desktop/new/temp/card/images/school.jpg");
+.content {
+    grid-area: content;
 }
 
-.car-2 {
-    background-image: url(C:/Users/quing/Desktop/new/temp/card/images/principal.jpg);
+.header {
+    grid-area: header;
 }
 
-.car-3 {
-    background-image: url("C:/Users/quing/Desktop/new/temp/card/images/mission.jpg");
+.footer {
+    grid-area: footer;
 }
 
-.car-4 {
-    background-image: url("");
+.wrapper {
+    background-color: #eeeeee;
+    color: #444;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
 }
 
-.card h2 {
+@media only screen and (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: 20% auto;
+        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        grid-gap: 20px;
+        grid-template-columns: 120px auto 120px;
+        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
+        max-width: 600px;
+    }
+}
+
+.box {
+    background-color: #444;
+    color: #ffffff;
+    border-radius: 5px;
     padding: 10px;
+    font-size: 150%;
 }
 
-.card p {
-    padding: 10px;
+.header,
+.footer {
+    background-color: #8ebf42;
 }
 
-.card a {
-    background-color: black;
-    color: white;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    margin: 20px 50px;
-    text-decoration: none;
-}
-
-.card:hover {
-    background-color: rgb(62, 62, 62);
-    color: white;
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: all 1s ease;
+.sidebar2 {
+    background-color: #ccc;
+    color: #444;
 }
