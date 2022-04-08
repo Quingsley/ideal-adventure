@@ -5,10 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Co-curriculum</title>
+    <title>Academic information</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../components/nav.css" />
-    <link rel="stylesheet" href="../components/footer.css" />
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="../../components/nav.css" />
+    <link rel="stylesheet" href="../../components/footer.css" />
     <script src="../components/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -17,7 +18,7 @@
 <body>
     <nav id="sticky-navbar">
         <div class="logo">
-            <img src="../assets/images/favicon.png" alt="logo" /> MY HIGH SCHOOL
+            <img src="../../assets/images/favicon.png" alt="logo" /> MY HIGH SCHOOL
         </div>
         <label for="btn" class="icon">
         <span class="fa fa-bars"></span>
@@ -54,108 +55,37 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <section class="intro">
-        <div>
-            <div class="header">SPORTS</div>
-            <div class="msgs nested">
-                <div class="box1">
-                    <h2>HOD SPORTS</h2>
-                    <img src="../assets/images/hod.jpg" alt="hod-sports">
-                </div>
-                <div class="box2">
-                    <h2>message</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem perspiciatis dolores harum porro necessitatibus iure veritatis optio ipsa expedita sequi! Animi consequuntur necessitatibus ullam nobis non praesentium, ea minus veniam.
-                    </p>
-                </div>
-                <div class="box3">
-                    <h2>Remarks</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia eius possimus perspiciatis doloribus. Expedita labore quidem quod vel sapiente.
-                    </p>
-                </div>
+    <div class="big-container">
+        <div class="container" id="container-left">
+            <div class="item half-heigth" id="item-top">
+                <h2>Class Structure</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolore labore totam dolor, quia fugit architecto reprehenderit laboriosam omnis culpa ullam nesciunt magnam ipsam doloribus cumque optio quos tenetur deserunt.</p>
             </div>
-    </section>
-    <main class="wrapper">
-        <section class="hero">
-            <h1>Our Awesome Sports</h1>
-            <article>
-                <h2>An <em>entertainig Rhythm </em></h2>
-            </article>
-        </section>
-        <section class="sports">
-            <ul>
-                <li>
-                    <figure>
-                        <img src="../assets/images/sports.jpg" alt="sport" />
-                        <figcaption>
-                            <h3>SOCCER</h3>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="../assets/images/sports3.jpg" alt="sports" />
-                        <figcaption>
-                            <h3>TEAM</h3>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="../assets/images/sports4.jpg" alt="sports" />
-                        <figcaption>
-                            <h3>Silver</h3>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="../assets/images/sportts1.jpg" alt="sports" />
-                        <figcaption>
-                            <h3>Heads Up</h3>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="../assets/images/sports6.jpg" alt="sports" />
-                        <figcaption>
-                            <h3>Taste the waters</h3>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="../assets/images/sports5.jpg" alt="sports" />
-                        <figcaption>
-                            <h3>Tennis</h3>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="../assets/images/sports.jpg" alt="sports" />
-                        <figcaption>
-                            <h3>Ball</h3>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="../assets/images/spbg.jpg" alt="sports" />
-                        <figcaption>
-                            <h3>Collection</h3>
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </section>
-        <footer>
-            <p>WE ❤ NURTURING SPORTS.</p>
-        </footer>
-    </main>
+            <div class="item half-heigth" id="item-bottom">
+                <h2>Subjects Offered</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos neque debitis minima. Iure voluptates impedit perferendis suscipit libero praesentium dicta vel, autem nesciunt necessitatibus perspiciatis, mollitia id quae quibusdam.</p>
+            </div>
+        </div>
+        <div class="container" id="container-center">
+            <div class="item full-heigth">
+                <h2>PAST KCSE RESULTS</h2>
+                <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, ullam nihil culpa earum explicabo ex, dolorem sapiente, asperiores odit quis qui illo accusantium! Ullam reiciendis suscipit at quam maiores error?</div>
 
+            </div>
+        </div>
+        <div class="container" id="container-right">
+            <div class="item half-heigth" id="item-top">
+                <h2>Message From Dean</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam architecto dolores aut nemo sed eos sint iure dolor inventore quae autem accusantium modi voluptatem tenetur laboriosam, qui amet totam sunt?</p>
+            </div>
+            <div class="item half-heigth" id="item-bottom">
+                <h2>Remarks</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, fugit possimus. Ex deserunt soluta sed dolorum, consequatur incidunt fugiat modi autem dicta hic. Repudiandae dolores exercitationem corrupti recusandae iste aliquam?</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
     <footer>
         <div class="section-1">
             <div class="container">
