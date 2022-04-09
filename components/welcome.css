@@ -128,7 +128,7 @@ video {
     padding: 15px;
 }
 
-.main-content.menu ul {
+.main-content .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -146,6 +146,12 @@ video {
     background-color: cyan;
 }
 
+.main-content .row .menu ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
 .main-content .aside {
     background-color: transparent;
     padding: 15px;
@@ -156,10 +162,15 @@ video {
 }
 
 .main-content .footer {
-    background-color: #ddd;
+    background-color: #1b1b1b;
     color: #ffffff;
     text-align: center;
     font-size: 12px;
     padding: 15px;
     font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.main-content .footer p {
+    color: #ffffff;
 }

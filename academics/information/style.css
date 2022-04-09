@@ -40,7 +40,7 @@
 
 .big-container {
     margin: 0 auto;
-    color: white;
+    color: black;
     font-weight: bold;
     font-family: sans-serif;
     display: flex;
@@ -61,18 +61,18 @@
 }
 
 #container-left {
-    background-color: #1b1b1b;
+    background-color: #dddddd;
     flex-grow: 1;
 }
 
 #container-center {
-    background-color: #1b1b1b;
+    background-color: #dddddd;
     flex-grow: 2;
     justify-content: flex-start;
 }
 
 #container-right {
-    background-color: #1b1b1b;
+    background-color: #dddddd;
     flex-grow: 1;
 }
 
@@ -86,11 +86,11 @@
 }
 
 #item-top {
-    background-color: #1b1b1b;
+    background-color: #dddddd;
 }
 
 #item-bottom {
-    background-color: #1b1b1b;
+    background-color: #dddddd;
 }
 
 .half-heigth {
