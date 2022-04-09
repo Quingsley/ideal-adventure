@@ -5,44 +5,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rough</title>
+    <title>form</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="table-title">
-        <h3>RESULTS</h3>
-    </div>
-    <table class="table-fill">
-        <thead>
-            <tr>
-                <th class="text-left">Year</th>
-                <th class="text-left">Mean</th>
-            </tr>
-        </thead>
-        <tbody class="table-hover">
-            <tr>
-                <td class="text-left">2021</td>
-                <td class="text-left">7.771</td>
-            </tr>
-            <tr>
-                <td class="text-left">2020</td>
-                <td class="text-left">7.601</td>
-            </tr>
-            <tr>
-                <td class="text-left">2019</td>
-                <td class="text-left">7.041</td>
-            </tr>
-            <tr>
-                <td class="text-left">2018</td>
-                <td class="text-left">6.991</td>
-            </tr>
-            <tr>
-                <td class="text-left">2017</td>
-                <td class="text-left">6.821</td>
-            </tr>
-        </tbody>
-    </table>
+    <form class="popup" id="popup-1">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">×</div>
+            <h1>Sign Up</h1>
+            <div class="input-field">
+                <label for="name">Name</label>
+                <input placeholder="Full Names" class="validate" />
+            </div>
+            <div class="input-field">
+                <label for="email">Email</label
+          ><input placeholder="Email" class="validate" />
+        </div>
+        <div class="input-field">
+          <label for="phone">Phone</label
+          ><input placeholder="Phone Number" class="validate" />
+        </div>
+        <div class="input-field">
+          <label for="year">Year Completed</label
+          ><input placeholder="Year Completed" class="validate" />
+        </div>
+        <div class="input-field">
+          <label for="name">Institution</label>
+                <input placeholder="University/College" class="validate" />
+            </div>
+            <div class="input-field">
+                <label for="name">Occupation</label>
+                <select placeholder="Occupation" class="validate">
+            <option aria-placeholder="Occupation" value="Student">
+              Student
+            </option>
+            <option value="Student">Employed</option>
+            <option value="Student">Self-Employed</option>
+          </select>
+            </div>
+            <button class="second-button">
+          <a href="#" class="link-1">Sign Up</a>
+        </button>
+        </div>
+    </form>
+    <button onclick="togglePopup()" class="first-button">Sign Up</button>
+    <script>
+        function togglePopup() {
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>
