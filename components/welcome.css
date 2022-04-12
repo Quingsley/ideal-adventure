@@ -174,3 +174,9 @@ video {
 .main-content .footer p {
     color: #ffffff;
 }
+
+@media all and (max-width: 768px) {
+    .main-content {
+        margin-top: 75px;
+    }
+}

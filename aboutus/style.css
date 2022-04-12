@@ -2,11 +2,16 @@ html {
     box-sizing: border-box;
 }
 
+.abt-content {
+    margin-top: 150px;
+}
+
 .abt-content .header {
     background-color: #1b1b1b;
     color: #ffffff;
     padding: 15px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .abt-content .header .typing-demo {
@@ -33,11 +38,7 @@ html {
 
 .abt-content .header h2 {
     text-align: center;
-    margin-left: 500px;
-}
-
-.abt-content {
-    margin-top: 100px;
+    margin: 10px;
 }
 
 *,
