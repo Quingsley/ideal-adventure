@@ -1,12 +1,15 @@
 #myForm {
-    width: 500px;
+    width: 600px;
     background-color: #1b1b1b;
     align-items: center;
+    height: 700px;
 }
 
 #myForm h1 {
     font-family: "courier", sans-serif;
     color: #dddddd;
+    font-size: 32px;
+    text-align: center;
 }
 
 #myForm input {
@@ -32,12 +35,11 @@
 .form-popup {
     display: none;
     position: absolute;
-    /*bottom: 0;*/
-    top: 50%;
-    left: 30%;
-    right: 20%;
+    top: 35%;
+    left: 15%;
+    right: 10%;
     border: 3px solid #1b1b1b;
-    z-index: 500;
+    z-index: 2;
     border-radius: 20px;
 }
 
@@ -56,8 +58,11 @@
 .form-container input[type="text"] {
     width: 80%;
     padding: 15px;
-    margin: 5px 0 22px 0;
+    margin: 15px;
     border: none;
+    left: 4%;
+    align-items: center;
+    justify-items: center;
     background: #f1f1f1;
 }
 
@@ -79,11 +84,10 @@
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 80%;
+    /*width: 80%;*/
     margin-bottom: 10px;
     opacity: 0.8;
     position: absolute;
-    left: 8%;
 }
 
 
@@ -99,4 +103,23 @@
 .form-container .btn:hover,
 .open-button:hover {
     opacity: 1;
+    color: cyan;
+}
+
+@media all and (max-width: 768px) {
+    .form-popup {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 10%;
+        border: 3px solid #1b1b1b;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .form-container {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 2px;
+    }
 }
