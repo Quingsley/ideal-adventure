@@ -127,6 +127,10 @@ input {
         margin-right: 0px;
         float: left;
     }
+    /*to be rectified*/
+    nav .logo img {
+        display: none;
+    }
     nav .logo {
         padding-left: 30px;
         width: 100%;

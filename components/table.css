@@ -1,6 +1,6 @@
 /*Table Styles **/
 
-.adm-container .wrapper .box3 table caption {
+.adm-container .wrapper .box3 .table caption {
     caption-side: bottom;
 }
 
@@ -120,4 +120,33 @@ td.text-right {
 .adm-container .wrapper .box3 .table .table-hover .text-left img {
     width: 50px;
     height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .table .table-fill caption {
+        background-image: none;
+    }
+    .table .table-fill thead {
+        display: none;
+    }
+    .table.table-fill tbody td {
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+    .table.table-fill tbody td:before:before {
+        content: attr(data-th);
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table.table-fill thead th {
+        padding: 10px;
+    }
+    .table.table-fill tbody td {
+        padding: 10px;
+    }
 }

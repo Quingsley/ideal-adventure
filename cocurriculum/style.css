@@ -59,6 +59,12 @@
     grid-row: 1;
 }
 
+.intro .nested .box1 img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
 .intro .nested .box2 {
     grid-column: 2;
     grid-row: 1;
@@ -170,4 +176,40 @@
     color: white;
     text-align: center;
     font-size: 0.75rem;
+}
+
+@media all and (max-width: 768px) {
+    .intro .msgs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .intro .msgs .box1 {
+        grid-row: 1;
+        grid-column: 1 / span end;
+    }
+    .intro .msgs .box2 {
+        grid-row: 2;
+        grid-column: 1 / span end;
+    }
+    .intro .msgs .box3 {
+        grid-row: 3;
+        grid-column: 1 / span end;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .intro .msgs {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .intro .msgs .box1 {
+        grid-row: 1;
+        grid-column: 1 / span end;
+    }
+    .intro .msgs .box2 {
+        grid-row: 2;
+        grid-column: 1 / span end;
+    }
+    .intro .msgs .box3 {
+        grid-row: 3;
+        grid-column: 1 / span end;
+    }
 }
