@@ -80,6 +80,12 @@ main {
     grid-row: 3/4;
 }
 
+.map {
+    width: 100%;
+    margin-top: 10px;
+    background-size: cover;
+}
+
 @media all and (max-width: 768px) {
     main {
         margin-top: 75px;

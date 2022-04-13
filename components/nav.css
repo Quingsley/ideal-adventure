@@ -127,8 +127,7 @@ input {
         margin-right: 0px;
         float: left;
     }
-    /*to be rectified*/
-    nav .logo img {
+    nav .logo span {
         display: none;
     }
     nav .logo {
