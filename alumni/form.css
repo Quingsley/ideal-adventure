@@ -1,125 +1,87 @@
-#myForm {
-    width: 600px;
-    background-color: #1b1b1b;
-    align-items: center;
-    height: 700px;
+.form-box label {
+    padding: 12px 12px 12px 0;
 }
 
-#myForm h1 {
-    font-family: "courier", sans-serif;
-    color: #dddddd;
-    font-size: 32px;
-    text-align: center;
-}
-
-#myForm input {
-    display: block;
-}
-
-.open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
-}
-
-
-/* The popup form - hidden by default */
-
-.form-popup {
-    display: none;
-    position: absolute;
-    top: 35%;
-    left: 15%;
-    right: 10%;
-    border: 3px solid #1b1b1b;
-    z-index: 2;
-    border-radius: 20px;
-}
-
-
-/* Add styles to the form container */
-
-.form-container {
+input[type="text"],
+select {
     width: 100%;
-    padding: 10px;
-    margin: 5px 2px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-
-/* Full-width input fields */
-
-.form-container input[type="text"] {
-    width: 80%;
-    padding: 15px;
-    margin: 15px;
-    border: none;
-    left: 4%;
-    align-items: center;
-    justify-items: center;
-    background: #f1f1f1;
-}
-
-
-/* When the inputs get focus, do something */
-
-.form-container input[type="text"]:focus,
-.form-container input[type="password"]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-
-/* Set a style for the submit/login button */
-
-.form-container .btn {
-    background-color: #fff;
+.form-box button {
+    width: 100%;
+    background-color: #1b1b1b;
     color: white;
-    padding: 16px 20px;
+    margin: 5px;
+    padding: 14px 20px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    /*width: 80%;*/
-    margin-bottom: 10px;
-    opacity: 0.8;
-    position: absolute;
 }
 
-
-/* Add a red background color to the cancel button */
-
-.form-container .cancel {
-    background-color: red;
+.form-box button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
 }
 
+.form-box button:hover {
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
+}
 
-/* Add some hover effects to buttons */
-
-.form-container .btn:hover,
-.open-button:hover {
-    opacity: 1;
+.form-box button a:hover {
     color: cyan;
 }
 
+.form-box {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 500px;
+    height: 100%;
+}
+
+.form-box form {
+    padding: 15px 30px;
+    margin: 20px;
+}
+
+.form-box fieldset {
+    border-radius: 15px;
+    box-shadow: 38px 38px 56px #1e1e1e, -25px -25px 38px #1e1e1e;
+}
+
+.form-box h2 {
+    text-align: center;
+    padding: 4px 6px;
+    margin: 4px;
+}
+
+.form-box p {
+    text-align: center;
+    padding: 4px;
+    margin: 15px;
+}
+
+.form-box .row {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 @media all and (max-width: 768px) {
-    .form-popup {
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 10%;
-        border: 3px solid #1b1b1b;
-        z-index: 1;
-        border-radius: 20px;
-    }
-    .form-container {
+    .form-box .row .col-1,
+    .form-box .row .col-2,
+    .form-box button {
         width: 100%;
-        padding: 10px;
-        margin: 5px 2px;
+        margin-top: 0;
     }
 }

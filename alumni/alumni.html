@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="highlights/slide.css" />
     <link rel="stylesheet" type="text/css" href="highlights/slide-1.css" />
     <link rel="stylesheet" type="text/css" href="form.css" />
+    <link rel="stylesheet" href="highlights/new_slide.css" />
     <script src="../components/jquery-3.6.0.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/694d6af067.js" crossorigin="anonymous"></script>
@@ -97,7 +98,7 @@
     <div class="alumni-container">
         <div class="box1">
             <h3>ALUMNI PROJECTS</h3>
-            <div class="slide-container">
+            <div class="slide-container" id="slides">
                 <input type="radio" id="i1" name="images" checked />
                 <input type="radio" id="i2" name="images" />
                 <input type="radio" id="i3" name="images" />
@@ -105,35 +106,35 @@
                 <input type="radio" id="i5" name="images" />
 
                 <div class="slide_img" id="one">
-                    <img src="image/admin.jpg" alt="pic" />
+                    <img src="../assets/images/admin.jpg" alt="pic" />
 
                     <label class="prev" for="i5"><span>&#x2039;</span></label>
                     <label class="next" for="i2"><span>&#x203a;</span></label>
                 </div>
 
                 <div class="slide_img" id="two">
-                    <img src="image/alum2.png" alt="pic" />
+                    <img src="../assets/images/cafeteria.png" alt="pic" />
 
                     <label class="prev" for="i1"><span>&#x2039;</span></label>
                     <label class="next" for="i3"><span>&#x203a;</span></label>
                 </div>
 
                 <div class="slide_img" id="three">
-                    <img src="image/band.jpg" alt="pic" />
+                    <img src="../assets/images/band.jpg" alt="pic" />
 
                     <label class="prev" for="i2"><span>&#x2039;</span></label>
                     <label class="next" for="i4"><span>&#x203a;</span></label>
                 </div>
 
                 <div class="slide_img" id="four">
-                    <img src="image/cafeteria.png" alt="pic" />
+                    <img src="../assets/images/cb.jpg" alt="pic" />
 
                     <label class="prev" for="i3"><span>&#x2039;</span></label>
                     <label class="next" for="i5"><span>&#x203a;</span></label>
                 </div>
 
                 <div class="slide_img" id="five">
-                    <img src="image/cb.jpg" alt="pic" />
+                    <img src="../assets/images/choir.jpg" alt="pic" />
 
                     <label class="prev" for="i4"><span>&#x2039;</span></label>
                     <label class="next" for="i1"><span>&#x203a;</span></label>
@@ -151,43 +152,86 @@
         <div class="box2">
             <div class="box2-1">
                 <h3>summary</h3>
-                <blockquote>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </blockquote>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
             <div class="box2-2">
-                <p>JOIN OUR COMMNITY USING THE LINK BELOW👇🏼👇🏼</p>
-                <button class="open-button" onclick="openForm()">REGISTER</button>
-                <div class="form-popup" id="myForm">
-                    <form method="GET" class="form-container">
-                        <h1>REGISTER IN OUR SCHOOL ALUMNI</h1>
-                        <input type="text" placeholder="Full names" name="full names" required />
-                        <input type="text" placeholder="Phone Number" name="phone" required />
-                        <input type="text" placeholder="Year Completed" name="year" required />
-                        <input type="text" placeholder="Enter Email" name="email" required />
-                        <button type="submit" class="btn">Register</button><br />
-                        <button type="button" class="btn cancel" onclick="closeForm()">
-                Close
-              </button>
-                    </form>
-                </div>
+                <div class="form-box">
+                    <h2>BE SURE TO SIGN UP FOR OUR ALUMNI COMMUNITY</h2>
+                    <fieldset>
+                        <form action="POST">
+                            <div class="row">
+                                <label for="name" class="col-1">Full Names</label
+            ><span
+              ><input type="text" placeholder="Your name" class="col-2" /></span
+            ><br />
+          </div>
+          <div class="row">
+            <label for="email" class="col-1">Email</label
+            ><span
+              ><input
+                type="text"
+                placeholder="Email address"
+                required
+                class="col-2" /></span
+            ><br />
+          </div>
+          <div class="row">
+            <label for="year completed" class="col-1">Year completed</label
+            ><span
+              ><input
+                type="text"
+                placeholder="Your completed"
+                class="col-2" /></span
+            ><br />
+          </div>
+          <div class="row">
+            <label for="phone" class="col-1">Phone Number</label
+            ><span
+              ><input
+                type="text"
+                placeholder="Phone number"
+                required
+                class="col-2" /></span
+            ><br />
+          </div>
+          <div class="row">
+            <label for="Occupation" class="col-1">Occupation</label>
+                                <span>
+              <select name="Occupation" id="#" class="col-2">
+                <option value="1">Student</option>
+                <option value="1">Employed</option>
+                <option value="1">Self-Employed</option>
+              </select> </span
+            ><br />
+          </div>
+          <div class="row">
+            <button><a href="./alumni.html">SIGN UP</a></button>
+          </div>
+        </form>
+        <p>We will appreciate your support</p>
+      </fieldset>
+    </div>
+
             </div>
-            <div class="box3">
-                <h3>testimonials</h3>
-                <div class="box box3">
-                    <div id="homepage-slider">
-                        <div class="slider-hero">
-                            <figure class="snip1192">
-                                <blockquote>
-                                    Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.
-                                </blockquote>
-                                <div class="author">
-                                    <img src="../assets/images/f1.jpg" alt="alumni" />
-                                    <h5>Pelican Steve <span> LittleSnippets</span></h5>
-                                </div>
+        </div>
+
+        <div class="box3">
+            <h3>testimonials</h3>
+            <div class="box box3">
+                <div id="homepage-slider">
+                    <div class="slider-hero">
+                        <figure class="snip1192">
+                            <blockquote>
+                                Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.
+                            </blockquote>
+                            <div class="author">
+                                <img src="../assets/images/f1.jpg" alt="alumni" />
+                                <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                            </div>
                             </figure>
                             <figure class="snip1192 hover">
                                 <blockquote>
@@ -243,11 +287,11 @@
                                     <h5>Max Conversion<span> LittleSnippets</span></h5>
                                 </div>
                             </figure>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     <footer class="footer-distributed">
         <div class="footer-left">
@@ -300,16 +344,10 @@
     <script type="text/javascript" src="../components/slick.min.js"></script>
     <script type="text/javascript" src="highlights/slide.js"></script>
     <script type="text/javascript" src="highlights/slide-1.js"></script>
-    <script>
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
 
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-    </script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./highlights/new_slide.js"></script>
+
     <script>
         $(".icon").click(function() {
             $("span").toggleClass("cancel");

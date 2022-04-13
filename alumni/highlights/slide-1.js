@@ -12,5 +12,5 @@
             arrows: false
         });
     });
-    
-})( jQuery );
+
+})(jQuery);
