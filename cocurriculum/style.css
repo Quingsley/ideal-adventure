@@ -4,6 +4,7 @@
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-auto-rows: minmax(100px auto);
     grid-gap: 1em;
+    margin-left: 15px;
 }
 
 .header {
@@ -181,6 +182,8 @@
 @media all and (max-width: 768px) {
     .intro .msgs {
         grid-template-columns: repeat(2, 1fr);
+        align-self: center;
+        margin-left: 20px;
     }
     .intro .msgs .box1 {
         grid-row: 1;

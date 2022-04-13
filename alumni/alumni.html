@@ -18,12 +18,13 @@
     <script src="../components/jquery-3.6.0.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/694d6af067.js" crossorigin="anonymous"></script>
+    t
 </head>
 
 <body>
     <nav id="sticky-navbar">
         <div class="logo">
-            <img src="../assets/images/favicon.png" alt="logo" />
+            <a href="../index.html"><img src="../assets/images/favicon.png" alt="logo" /></a>
             <span>BOOKER ACADEMY</span>
         </div>
         <label for="btn" class="icon">
@@ -96,26 +97,54 @@
     <div class="alumni-container">
         <div class="box1">
             <h3>ALUMNI PROJECTS</h3>
-            <div id="homepage-slider-1">
-                <div class="slider-hero-1">
-                    <div>
-                        <img src="../assets/images/cafeteria.png" alt="pic" />
-                    </div>
-                    <div>
-                        <img src="../assets/images/bg.jpg" alt="pic" />
-                    </div>
-                    <div>
-                        <img src="../assets/images/alum2.png" alt="pic" />
-                    </div>
-                    <div>
-                        <img src="../assets/images/cb.jpg" alt="pic" />
-                    </div>
-                    <div>
-                        <img src="../assets/images/cafeteria.png" alt="pic" />
-                    </div>
-                    <div>
-                        <img src="../assets/images/download.jpg" alt="pic" />
-                    </div>
+            <div class="slide-container">
+                <input type="radio" id="i1" name="images" checked />
+                <input type="radio" id="i2" name="images" />
+                <input type="radio" id="i3" name="images" />
+                <input type="radio" id="i4" name="images" />
+                <input type="radio" id="i5" name="images" />
+
+                <div class="slide_img" id="one">
+                    <img src="image/admin.jpg" alt="pic" />
+
+                    <label class="prev" for="i5"><span>&#x2039;</span></label>
+                    <label class="next" for="i2"><span>&#x203a;</span></label>
+                </div>
+
+                <div class="slide_img" id="two">
+                    <img src="image/alum2.png" alt="pic" />
+
+                    <label class="prev" for="i1"><span>&#x2039;</span></label>
+                    <label class="next" for="i3"><span>&#x203a;</span></label>
+                </div>
+
+                <div class="slide_img" id="three">
+                    <img src="image/band.jpg" alt="pic" />
+
+                    <label class="prev" for="i2"><span>&#x2039;</span></label>
+                    <label class="next" for="i4"><span>&#x203a;</span></label>
+                </div>
+
+                <div class="slide_img" id="four">
+                    <img src="image/cafeteria.png" alt="pic" />
+
+                    <label class="prev" for="i3"><span>&#x2039;</span></label>
+                    <label class="next" for="i5"><span>&#x203a;</span></label>
+                </div>
+
+                <div class="slide_img" id="five">
+                    <img src="image/cb.jpg" alt="pic" />
+
+                    <label class="prev" for="i4"><span>&#x2039;</span></label>
+                    <label class="next" for="i1"><span>&#x203a;</span></label>
+                </div>
+
+                <div id="nav_slide">
+                    <label for="i1" class="dots" id="dot1"></label>
+                    <label for="i2" class="dots" id="dot2"></label>
+                    <label for="i3" class="dots" id="dot3"></label>
+                    <label for="i4" class="dots" id="dot4"></label>
+                    <label for="i5" class="dots" id="dot5"></label>
                 </div>
             </div>
         </div>

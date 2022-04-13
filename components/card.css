@@ -28,7 +28,7 @@ main .card-image {
 }
 
 main .car-1 {
-    background-image: url("../assets/images/logo_transparent.png");
+    background-image: url("../assets/images/admin.jpg");
     max-width: 100%;
     vertical-align: top;
 }
@@ -38,11 +38,11 @@ main .car-2 {
 }
 
 main .car-3 {
-    background-image: url("../assets/images/logo_transparent.png");
+    background-image: url("../assets/images/mission.jpg");
 }
 
 main .car-4 {
-    background-image: url("../assets/images/logo_transparent.png");
+    background-image: url("../assets/images/objectives.jpg");
 }
 
 main.card h2 {
