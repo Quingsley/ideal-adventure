@@ -52,7 +52,7 @@
     left: 0;
 }
 
-label span {
+.alumni-container .slide-container .slide_img label span {
     position: absolute;
     font-size: 100pt;
     top: 50%;
@@ -131,7 +131,7 @@ label span {
         height: 0;
         padding-bottom: 55%;
     }
-    label span {
+    .alumni-container .slide-container .slide_img label span {
         font-size: 50pt;
     }
     .prev,

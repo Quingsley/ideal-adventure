@@ -172,4 +172,7 @@ footer {
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
+    .footer-links a {
+        font-size: 0.8rem;
+    }
 }
