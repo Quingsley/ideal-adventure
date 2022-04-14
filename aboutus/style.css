@@ -83,10 +83,6 @@ html {
     grid-column: 1;
 }
 
-.abt-content .p-image .box1 figure {
-    caption-side: bottom;
-}
-
 .abt-content .p-image .box1 figure img {
     float: left;
     margin: 2px;
