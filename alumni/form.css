@@ -47,6 +47,10 @@ select {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     width: 500px;
     height: 100%;
+    margin-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .form-box form {
@@ -83,5 +87,54 @@ select {
     .form-box button {
         width: 100%;
         margin-top: 0;
+    }
+    .form-box {
+        width: 80%;
+        margin: 10px 30% 10px 11%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-box h2 {
+        font-size: 16px;
+    }
+    .form-box p {
+        font-size: 14px;
+    }
+    .form-box label {
+        font-size: 12px;
+    }
+    .form-box button {
+        padding: 5px;
+    }
+    input[type="text"] {
+        padding: 8px;
+    }
+    .form-box {
+        width: 80%;
+        margin: 10px 30% 10px 11%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .form-box button {
+        padding: 4px;
+        font-size: 12px;
+    }
+    input[type="text"] {
+        padding: 8px;
+    }
+    .form-box label {
+        font-size: 12px;
+    }
+    .form-box h2 {
+        font-size: 15px;
+    }
+    .form-box p {
+        font-size: 12px;
+    }
+    .form-box {
+        width: 80%;
+        margin: 10px 30% 10px 11%;
     }
 }
